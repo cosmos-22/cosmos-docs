@@ -1,0 +1,32 @@
+/* .vitepress/theme/custom.css */
+:root {
+  --vp-c-brand-1: #7f5ca0;
+  --vp-c-brand-2: #611fa0;
+  --vp-c-brand-3: #9333ea;
+  --vp-badge-tip-text: #888888;
+}
+
+/* 第二層：灰色/次要資訊 */
+.vp-doc ul ul li {
+  list-style-type: none;
+  color: var(--vp-c-text-1);
+  font-weight: 400;
+  margin-top: 0.2rem;
+  position: relative;
+}
+.vp-doc ul ul li::before {
+  content: "◇"; /* 第二層用空心方塊 */
+  position: absolute;
+  left: -1.2rem;
+  font-size: 0.8rem;
+  color: var(--vp-c-text-2);
+}
+
+/* 第三層：更淡的顏色 */
+.vp-doc ul ul ul li {
+  color: var(--vp-c-text-2);
+  font-size: 0.95rem;
+}
+.vp-doc ul ul ul li::before {
+  content: "◆"; /* 第三層回歸小圓點 */
+}
