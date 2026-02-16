@@ -4,14 +4,14 @@ layout: home
 
 hero:
   name: "COSMOS dev."
-  text: "為 FiveM 創作 NUI 和 資源"
+  text: "為 FiveM 創作 NUI 和 插件"
   tagline: by @cosmos.22
   actions:
     - theme: brand
       text: 開發文件
       link: /zhHK/introduction
     - theme: alt
-      text: Tebex 商店
+      text: COSMOS 商店
       link: https://cosmos.tebex.io/
 
 features:
@@ -23,6 +23,6 @@ features:
     details: 程式碼經過撰寫與調整，以降低資源佔用，確保流暢的遊戲體驗
   - icon: ✨
     title: 持續更新
-    details: 資源會定期維護與改進，以符合伺服器不斷演變的需求
+    details: 插件會定期維護與改進，以符合伺服器不斷演變的需求
 ---
 

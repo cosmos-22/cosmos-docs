@@ -8,7 +8,7 @@ This section demonstrates how you can install our resources into your FiveM serv
 You can also follow the installation guide under each resource for any extra steps specific to the resource.
 
 ### Steps
-- Claim the resource you want from [Tebex store](https://cosmos.tebex.io/).
+- Claim the resource you want from [COSMOS store](https://cosmos.tebex.io/).
 - Go to [Cfx portal page](https://portal.cfx.re/), and navigate to the assets page.
 - Under the **Granted Assets** tab, navigate to the resource and click **Download**.
 - Unzip the downloaded zip to your `resources` directory and rename the it to the name of the resource.

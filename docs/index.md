@@ -11,7 +11,7 @@ hero:
       text: Documentation
       link: /introduction
     - theme: alt
-      text: Tebex
+      text: COSMOS Store
       link: https://cosmos.tebex.io/
 
 features:
@@ -20,7 +20,7 @@ features:
     details: Provides fast in‑game rendering while preserving performance.
   - icon: 🏃🏻‍➡️
     title: Optimised for gameplay
-    details: CWritten to minimise resource usage, ensuring a seamless experience.
+    details: Written to minimise resource usage, ensuring a seamless experience.
   - icon: ✨
     title: Ongoing Updates
     details: Regularly maintained and improved to meet the evolving needs of servers.

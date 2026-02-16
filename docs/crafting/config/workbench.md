@@ -13,13 +13,15 @@ You can add your workbenches in `/data/workbench.lua`.
 
 ## Options
 
-- **coords** <Badge text="vector4" /> <span style="color:gray; font-size:15px"> — Coordinates of the triggering point</span>
+- **coords** <Badge text="vector4" /><span style="color:gray; font-size:15px"> — Coordinates of the triggering point</span>
 
 - **distance** <Badge text="number" /><span style="color:gray; font-size:15px"> — Interactive distance</span>
 
-- **prop?** <Badge text="table" /> ( level: <Badge text="number" /> )<span style="color:gray; font-size:15px"> — Will only spawn when defined</span>
+- **prop?** <Badge text="table" /><span style="color:gray; font-size:15px"> — Will only spawn when defined</span>
     - model <Badge text="string" />
     - coords <Badge text="vector4" />
+
+- **useTarget?** <Badge text="boolean" /><span style="color:gray; font-size:15px"> — Use `ox_target` instead of marker to open the workbench. The target will be on the prop if defined, or else will create a sphere zone at the coords</span>
 
 - **blip?** <Badge text="table" /><span style="color:gray; font-size:15px"> — Will only show when defined</span>
     - sprite <Badge text="number" /><span style="color:gray; font-size:15px"> — Appearance of the blip, refer to [FiveM documentation](https://docs.fivem.net/docs/game-references/blips/) for sprite ID</span>
@@ -48,19 +50,21 @@ local workbench = {
             coords = vec4(211.5069, -927.7875, 30.6920, 236.9225)
         },
         blip = {
-            sprite = 123,
-            color = 5,
-            scale = 0.8,
+            sprite = 544,
+            color = 11,
+            scale = 0.9,
             name = 'Workbench'
         },
-        crafts = {'t20'},
+        crafts = {'t20', 'pistol'},
+        dismantles = {'cloth'}
     },
     {
         coords = vec4(309.4300, -596.9056, 43.2918, 344.7367),
-        distance = 1.2,
+        distance = 3.0,
         job = {['ambulance'] = 2},
         crafts = {'bandage'},
-        dismantles = {'cloth'},
+        dismantles = {'bandage'},
+        useTarget = true
     },
 }
 

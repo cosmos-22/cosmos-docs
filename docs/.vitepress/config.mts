@@ -5,6 +5,7 @@ export default defineConfig({
    base: '/cosmos-docs/',
   title: "COSMOS dev.",
   description: "Creating FiveM NUI & systems",
+  head: [['link', { rel: 'icon', href: '/cosmos-docs/cosmos_logo_c_t.png' }]],
   locales: {
     root: {
       label: 'English',
@@ -84,7 +85,7 @@ export default defineConfig({
             text: '免費插件',
             items: [
             {
-              text: '🛠️ 合成台系統',
+              text: '🛠️ 工作台系統',
               collapsed: false,
               link: '/zhHK/crafting/',
               items: [
@@ -94,14 +95,14 @@ export default defineConfig({
                   items: [
                     { text: '一般', link: '/zhHK/crafting/config/general' },
                     { text: 'NUI 設定', link: '/zhHK/crafting/config/nui' },
-                    { text: '合成台', link: '/zhHK/crafting/config/workbench' },
+                    { text: '工作台', link: '/zhHK/crafting/config/workbench' },
                     { text: '合成物品', link: '/zhHK/crafting/config/crafting_items' },
-                    { text: '分解物品', link: '/zhHK/crafting/config/dismantle_items' },
+                    { text: '拆解物品', link: '/zhHK/crafting/config/dismantle_items' },
                   ], 
                   collapsed: true
                 },
                 { 
-                  text: '輸出 (Exports)', 
+                  text: '匯出 (Exports)', 
                   items: [
                     { text: '伺服器端', link: '/zhHK/crafting/exports/server' },
                   ], 
@@ -129,7 +130,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
-
+    logo: '/cosmos_logo_c_t.png',
     socialLinks: [
       { icon: 'discord', link: 'https://discord.gg/pjuPHPrHnx' }
     ],

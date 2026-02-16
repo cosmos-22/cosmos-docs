@@ -1,31 +1,29 @@
 ---
 prev:
-  text: 'General'
-  link: '/crafting/config/general'
+  text: '一般'
+  link: '/zhHK/crafting/config/general'
 next:
   text: 'Workbenches'
-  link: '/crafting/config/workbench'
+  link: '/zhHK/crafting/config/workbench'
 ---
 
-# NUI Configuration
+# NUI 配置
 
-NUI-related settings are configured in `/data/nui.lua`.
+與 NUI 相關的設定位於 `/data/nui.lua`。
 
-## Options
+## 選項
 
-- **DefaultDescription** <Badge text="string" /> <span style="color:gray; font-size:15px"> — Default description when description is not defined in the recipe</span>
+- **DefaultDescription** <Badge text="string" /> <span style="color:gray; font-size:15px"> — 當未在配方中定義描述時的預設描述</span>  
 
-- **ItemMax** <Badge text="number" /><span style="color:gray; font-size:15px"> — Maxmimum number of items the player can craft at one click</span>
+- **ItemMax** <Badge text="number" /><span style="color:gray; font-size:15px"> — 玩家一次可合成的最大物品數量</span>  
 
-- **ImagePath**? <Badge text="string" /> ( level: <Badge text="number" /> )<span style="color:gray; font-size:15px"> — The image path of the item images</span>
+- **ImagePath**? <Badge text="string" /><span style="color:gray; font-size:15px"> — 物品圖片的路徑</span>  
 
-- **PrimaryColor** <Badge text="table" /><span style="color:gray; font-size:15px"> — Primary color of the NUI</span>
-    - dict <Badge text="string" />
-    - clip <Badge text="string" />
+- **PrimaryColor** <Badge text="string" /><span style="color:gray; font-size:15px"> — NUI 的主要顏色</span>  
 
-- **EnableStar** <Badge text="function" /> <span style="color:gray; font-size:15px"> — Whether to turn on the stars effect on the background of the NUI</span>
+- **EnableStar** <Badge text="boolean" /> <span style="color:gray; font-size:15px"> — 是否在 NUI 背景啟用星星效果</span>  
 
-## Default settings
+## 預設設定
 
 ::: code-group
 

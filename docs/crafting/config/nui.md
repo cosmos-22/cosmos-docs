@@ -17,13 +17,11 @@ NUI-related settings are configured in `/data/nui.lua`.
 
 - **ItemMax** <Badge text="number" /><span style="color:gray; font-size:15px"> — Maxmimum number of items the player can craft at one click</span>
 
-- **ImagePath**? <Badge text="string" /> ( level: <Badge text="number" /> )<span style="color:gray; font-size:15px"> — The image path of the item images</span>
+- **ImagePath**? <Badge text="string" /><span style="color:gray; font-size:15px"> — The image path of the item images</span>
 
-- **PrimaryColor** <Badge text="table" /><span style="color:gray; font-size:15px"> — Primary color of the NUI</span>
-    - dict <Badge text="string" />
-    - clip <Badge text="string" />
+- **PrimaryColor** <Badge text="string" /><span style="color:gray; font-size:15px"> — Primary color of the NUI</span>
 
-- **EnableStar** <Badge text="function" /> <span style="color:gray; font-size:15px"> — Whether to turn on the stars effect on the background of the NUI</span>
+- **EnableStar** <Badge text="boolean" /> <span style="color:gray; font-size:15px"> — Whether to turn on the stars effect on the background of the NUI</span>
 
 ## Default settings
 

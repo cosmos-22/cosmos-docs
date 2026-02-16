@@ -1,27 +1,35 @@
 ---
 prev:
-  text: 'Introduction'
-  link: '/introduction'
+  text: '簡介'
+  link: '/zhHK/introduction'
 next:
-  text: 'Installation'
-  link: '/crafting/installation'
+  text: '安裝指南'
+  link: '/zhHK/crafting/installation'
 ---
 
 # 🛠️ csms_crafting
 
-This resource provides a crafting and dismantling system powered by an exquisite NUI, featuring built-in leveling system and tool requirements to elevate your server's gameplay experience.
+csms_crafting 提供一套由精美 NUI 驅動的合成與拆解系統，並包含內建的等級系統與工具需求，旨在提升伺服器的遊戲體驗。
 
-## Features
-- **Multi-Station Support:** Create benches anywhere you want.
-- **Multi-Recipe Support:** Create multiple recipes for the same item.
-- **Job Locking:** Restrict specific benches/recipes to certain jobs or ranks.
-- **XP & Leveling:** Unlock advanced recipes as players gain crafting experience.
-- **Tools requirement:** Require specific "tool" items to craft or dismantle.
-- **Queue System:** Allows players to queue multiple items at once.
-- **Highly Optimised:** 0.00ms idle usage with [ox_lib](https://github.com) integration.
+## 插件功能
+- **合成與拆解：** 支援物品的合成與拆解。  
+- **多工作台支援：** 可在任意位置設置工作台。  
+- **多配方支援：** 可為同一物品設置多個合成或拆解配方。  
+- **職業鎖定：** 可將特定工作台限制於指定職業或等級使用。  
+- **經驗與等級：** 玩家隨著合成經驗提升可解鎖進階配方。  
+- **工具需求：** 可為配方設置工具需求。  
+- **隊列系統：** 玩家可同時排隊多個物品。  
+- **載具支援：** 可直接將合成的載具加入玩家車庫。  
 
-## Preview
-[Watch the Showcase](https://youtube.com)
+## 代碼特色
+- **框架支援：** 與主流框架 (ESX / QBCore / QBox / Ox) 和背包系統 (ESX / qb-inventory / ox_inventory) 相容。  
+- **可自訂顏色：** NUI 主題顏色可在設定檔中自訂以符合伺服器主題。  
+- **簡易配置：** 所有可配置項目均可在 `data` 資料夾中設定。  
+- **匯出支援：** 提供匯出功能以整合伺服器。  
+- **高度優化：** 空閒使用率僅 0.00ms。  
 
-## License
-This project is licensed under the [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+## 預覽
+[觀看展示影片](https://youtube.com)
+
+## 授權條款
+本專案採用 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hant) 授權。

@@ -28,7 +28,7 @@ Items are defined with key, value pairs. Key serves as the ID of the recipe and 
 
 - **stats?** <Badge text="table[]" /> <span style="color:gray; font-size:15px"> — Statistics shown under the description to provide further information about the item, can be used to show vehicle speed or weapon damage </span>
     - icon <Badge text="string" /> <span style="color:gray; font-size:15px"> — Any icon from [Iconify](https://icon-sets.iconify.design/) </span>
-    - color <Badge text="string" /> <span style="color:gray; font-size:15px"> — Colour of the icon in rgb </span>
+    - color <Badge text="string" /> <span style="color:gray; font-size:15px"> — Colour of the icon </span>
     - label <Badge text="string" />
     - value <Badge text="string" />
 
@@ -46,7 +46,7 @@ Items are defined with key, value pairs. Key serves as the ID of the recipe and 
     - itemName <Badge text="string" />
     - count <Badge text="number" />
 
-## Example
+## Examples
 ::: code-group
 
 ```lua [data/craft.lua]
@@ -59,10 +59,22 @@ local crafts = {
         level = 1,
         exp = 10,
         recipe = {
-            {itemName = 'clothe', count = 1},            
+            {itemName = 'clothe', count = 5},            
+        },
+    },
+    ['pistol'] = {
+        itemName = 'weapon_pistol',
+        category = 'Weapon',
+        description = 'Used for basic self‑defense, offering moderate damage at close range.',
+        time = 20,
+        level = 3,
+        exp = 50,
+        recipe = {
+            {itemName = 'copper', count = 5},
+            {itemName = 'iron', count = 5},                   
         },
         tools = {
-            {itemName = 'clothe', count = 1},            
+            {itemName = 'blueprint', count = 1},            
         },
     },
     ['t20'] = {
@@ -71,12 +83,12 @@ local crafts = {
         type = 'car',
         category = 'Vehicle',
         stats = {
-            {icon = 'mdi:gear', label = 'Engine', value = '3%', color = 'rgb(58, 196, 127)'},
+            {icon = 'material-symbols:speed', label = 'Speed', value = '200 km/h', color = 'rgb(58, 196, 127)'},
         },
         time = 10,
         level = 5,
         recipe = {
-            {itemName = 'iron', count = 10},            
+            {itemName = 'iron', count = 30},            
         },
         tools = {
             {itemName = 'fixkit', count = 1}

@@ -9,8 +9,10 @@ next:
 # Dependencies & Installation
 
 ## Dependencies
-- **Framework** — ESX / QB / QBox / ox
-- **Script functioning** — [ox_lib](https://github.com/overextended/ox_lib)
+- **Framework** — ESX / QBCore / QBox / Ox
+- **Inventory** — ESX / qb-inventory / ox_inventory
+- [ox_lib](https://github.com/overextended/ox_lib)
+- [ox_target](https://github.com/overextended/ox_target) (optional)
 
 ## Installation
 ### 1. **Add to Resources** 

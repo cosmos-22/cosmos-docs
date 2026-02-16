@@ -37,7 +37,7 @@ Items are defined with key, value pairs. Key serves as the ID of the recipe and 
     - itemName <Badge text="string" />
     - count <Badge text="number" />
 
-## Example
+## Examples
 ::: code-group
 
 ```lua [data/dismantle.lua]

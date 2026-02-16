@@ -13,7 +13,9 @@ General settings are configured in `/data/settings.lua`.
 
 ## Options
 
-- **marker?** <Badge text="table" /> <span style="color:gray; font-size:15px"> — Appearance of the triggering point</span>
+- **debugMode** <Badge text="boolean" />
+
+- **marker?** <Badge text="table" /> <span style="color:gray; font-size:15px"> — Appearance of the triggering point if target is not enabled</span>
     - type <Badge text="number" /><span style="color:gray; font-size:15px"> — Refer to [FiveM documentation](https://docs.fivem.net/docs/game-references/markers/) for markers ID</span>
     - rotation <Badge text="vector3" />
     - zOffset <Badge text="number" />
@@ -34,6 +36,9 @@ General settings are configured in `/data/settings.lua`.
 - **notify** <Badge text="function" /> <span style="color:gray; font-size:15px"> — Change it to your preferred notification system, default using ox_lib notification</span>
 
 - **platePattern** <Badge text="string" /><span style="color:gray; font-size:15px"> — Pattern of the plate of newly crafted vehicles, refer to [ox_lib documentation](https://coxdocs.dev/ox_lib/Modules/String/Shared#stringrandom) for the pattern</span>
+::: warning OX_CORE Compatability
+If you are using `ox_core`, the platePattern setting is only supported on version 1.5.8 or later. For earlier versions, the system will instead use the pattern defined in `ox:plateFormat`.
+:::
 
 - **vehicleAdded** <Badge text="function" /> ( source:<Badge text="number" />, itemName: <Badge text="string" />, plate<Badge text="string" /> )<span style="color:gray; font-size:15px"> — Triggered on sesrver side when a vehicle is crafted, useful for giving car key</span>
 
@@ -60,7 +65,7 @@ local settings = {
         clip = 'fixing_a_ped'
     },
 
-    platePattern = 'AAA^ 111',
+    platePattern = 'AAAA1111',
 
     vehicleAdded = function(source, itemName, plate)
     if not IsDuplicityVersion() then return end

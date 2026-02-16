@@ -1,22 +1,23 @@
 ---
 prev:
-  text: 'Exports'
-  link: '/crafting/exports/server'
+  text: '匯出 (Exports)'
+  link: '/zhHK/crafting/exports/server'
 ---
 
-# Admin Commands
-This page documents the commands available for admins.
+# 管理員指令
+
+此頁面記錄管理員可用的指令。
 
 ## `/addCraftExp`
-Adds exp to a player in the built-in level system.
+在內建等級系統中為玩家增加經驗值。
 
-Arguments:
-- target <Badge text="number" /> <span style="color:gray; font-size:15px"> — Server ID of the player</span>
-- exp <Badge text="number" /> <span style="color:gray; font-size:15px"> — Amount of Exp to give</span>
+參數:  
+- target <Badge text="number" /> <span style="color:gray; font-size:15px"> — 玩家在伺服器中的 ID</span>  
+- exp <Badge text="number" /> <span style="color:gray; font-size:15px"> — 要給予的經驗值數量</span>  
 
 ## `/setCraftLv`
-Sets the crafting level of a player in the built-in level system. Exp will be automatically set to 0.
+設定玩家在內建等級系統中的合成等級。經驗值將自動重設為 0。
 
-Arguments:
-- target <Badge text="number" /> <span style="color:gray; font-size:15px"> — Server ID of the player</span>
-- level <Badge text="number" /> <span style="color:gray; font-size:15px"> — Level to set</span>
+參數:  
+- target <Badge text="number" /> <span style="color:gray; font-size:15px"> — 玩家在伺服器中的 ID</span>  
+- level <Badge text="number" /> <span style="color:gray; font-size:15px"> — 要設定的等級</span>  

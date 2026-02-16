@@ -1,43 +1,48 @@
 ---
 prev:
-  text: 'Installation'
-  link: '/crafting/installation'
+  text: '安裝指南'
+  link: '/zhHK/crafting/installation'
 next:
-  text: 'NUI settings'
-  link: '/crafting/config/nui'
+  text: 'NUI 設定'
+  link: '/zhHK/crafting/config/nui'
 ---
 
-# General Configuration
+# 通用配置
 
-General settings are configured in `/data/settings.lua`.
+一般設定位於 `/data/settings.lua`。
 
-## Options
+## 選項
 
-- **marker?** <Badge text="table" /> <span style="color:gray; font-size:15px"> — Appearance of the triggering point</span>
-    - type <Badge text="number" /><span style="color:gray; font-size:15px"> — Refer to [FiveM documentation](https://docs.fivem.net/docs/game-references/markers/) for markers ID</span>
-    - rotation <Badge text="vector3" />
-    - zOffset <Badge text="number" />
-    - color <Badge text="table" />
-        - r <Badge text="number" />
-        - g <Badge text="number" />
-        - b <Badge text="number" />
-        - a <Badge text="number" />
+- **debugMode** <Badge text="boolean" />
 
-- **enableLevel** <Badge text="boolean" /><span style="color:gray; font-size:15px"> — Whether to use the built in leveling system</span>
+- **marker?** <Badge text="table" /> <span style="color:gray; font-size:15px"> — 當未啟用 target 時，觸發點光圈的外觀</span>  
+    - type <Badge text="number" /><span style="color:gray; font-size:15px"> — 請參考 [FiveM 文件](https://docs.fivem.net/docs/game-references/markers/) 以取得標記 ID</span>  
+    - rotation <Badge text="vector3" />  
+    - zOffset <Badge text="number" />  
+    - color <Badge text="table" />  
+        - r <Badge text="number" />  
+        - g <Badge text="number" />  
+        - b <Badge text="number" />  
+        - a <Badge text="number" />  
 
-- **levelUpExp**? <Badge text="function" /> ( level: <Badge text="number" /> )<span style="color:gray; font-size:15px"> — How the system will calculate the Exp required for the next level up</span>
+- **enableLevel** <Badge text="boolean" /><span style="color:gray; font-size:15px"> — 是否使用內建的等級系統</span>  
 
-- **craftingAnim?** <Badge text="table" /><span style="color:gray; font-size:15px"> — Animation when crafting, keep `nil` to disable animation</span>
-    - dict <Badge text="string" />
-    - clip <Badge text="string" />
+- **levelUpExp**? <Badge text="function" /> ( level: <Badge text="number" /> )<span style="color:gray; font-size:15px"> — 系統如何計算升級所需的經驗值</span>  
 
-- **notify** <Badge text="function" /> <span style="color:gray; font-size:15px"> — Change it to your preferred notification system, default using ox_lib notification</span>
+- **craftingAnim?** <Badge text="table" /><span style="color:gray; font-size:15px"> — 合成時的動作，保持 `nil` 以停用動作</span>  
+    - dict <Badge text="string" />  
+    - clip <Badge text="string" />  
 
-- **platePattern** <Badge text="string" /><span style="color:gray; font-size:15px"> — Pattern of the plate of newly crafted vehicles, refer to [ox_lib documentation](https://coxdocs.dev/ox_lib/Modules/String/Shared#stringrandom) for the pattern</span>
+- **notify** <Badge text="function" /> <span style="color:gray; font-size:15px"> — 可更改為你偏好的通知系統，預設使用 ox_lib 通知</span>  
 
-- **vehicleAdded** <Badge text="function" /> ( source:<Badge text="number" />, itemName: <Badge text="string" />, plate<Badge text="string" /> )<span style="color:gray; font-size:15px"> — Triggered on sesrver side when a vehicle is crafted, useful for giving car key</span>
+- **platePattern** <Badge text="string" /><span style="color:gray; font-size:15px"> — 新合成載具的車牌樣式，請參考 [ox_lib 文件](https://coxdocs.dev/ox_lib/Modules/String/Shared#stringrandom) 以設定樣式</span>  
+::: warning OX_CORE 相容性
+若你使用 `ox_core`，`platePattern` 設定僅支援 1.5.8 或以上版本。較舊版本則會使用 `ox:plateFormat` 中定義的樣式。
+:::
 
-## Default settings
+- **vehicleAdded** <Badge text="function" /> ( source:<Badge text="number" />, itemName: <Badge text="string" />, plate<Badge text="string" /> )<span style="color:gray; font-size:15px"> — 當載具被合成時於伺服器端觸發，常用於發放車鑰匙</span>  
+
+## 預設設定
 
 ::: code-group
 
@@ -60,7 +65,7 @@ local settings = {
         clip = 'fixing_a_ped'
     },
 
-    platePattern = 'AAA^ 111',
+    platePattern = 'AAAA1111',
 
     vehicleAdded = function(source, itemName, plate)
     if not IsDuplicityVersion() then return end
