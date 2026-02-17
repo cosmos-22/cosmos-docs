@@ -13,6 +13,15 @@ next:
 - **Inventory** — ESX / qb-inventory / ox_inventory
 - [ox_lib](https://github.com/overextended/ox_lib)
 - [ox_target](https://github.com/overextended/ox_target) (optional)
+:::details ✅ Tested Versions
+This script has been verified to work with the following framework versions:
+- ESX **1.13.4**
+- QBCore **1.3.0**
+- QBox **1.23.0**
+- Ox Core **1.5.1**
+
+Other versions may work but are not officially tested.
+:::
 
 ## Installation
 ### 1. **Add to Resources** 

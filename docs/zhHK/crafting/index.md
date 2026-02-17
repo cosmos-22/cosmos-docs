@@ -29,7 +29,7 @@ csms_crafting 提供一套由精美 NUI 驅動的合成與拆解系統，並包�
 - **高度優化：** 空閒使用率僅 0.00ms。  
 
 ## 預覽
-[觀看展示影片](https://youtube.com)
+[觀看展示影片](https://youtu.be/MH1DzWlUeQM)
 
 ## 授權條款
 本專案採用 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hant) 授權。

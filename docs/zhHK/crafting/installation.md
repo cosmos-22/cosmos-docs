@@ -13,6 +13,15 @@ next:
 - **背包系統** — ESX / qb-inventory / ox_inventory
 - [ox_lib](https://github.com/overextended/ox_lib)
 - [ox_target](https://github.com/overextended/ox_target) (可選)
+:::details ✅ 測試版本
+此腳本已在以下框架版本中驗證可正常運行：
+- ESX **1.13.4**
+- QBCore **1.3.0**
+- QBox **1.23.0**
+- Ox Core **1.5.1**
+
+其他版本可能也能正常使用，但尚未經過官方測試。
+:::
 
 ## 安裝步驟
 ### 1. **加入插件**

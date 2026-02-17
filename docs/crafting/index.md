@@ -29,7 +29,7 @@ This resource provides a crafting and dismantling system powered by an exquisite
 - **Highly Optimised:** 0.00ms idle usage.
 
 ## Preview
-[Watch the Showcase](https://youtube.com)
+[Watch the Showcase](https://youtu.be/MH1DzWlUeQM)
 
 ## License
 This project is licensed under the [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
