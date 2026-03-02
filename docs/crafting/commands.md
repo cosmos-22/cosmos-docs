@@ -2,6 +2,9 @@
 prev:
   text: 'Exports'
   link: '/crafting/exports/server'
+next:
+  text: '💿 csms_log'
+  link: '/log/'
 ---
 
 # Admin Commands

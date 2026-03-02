@@ -56,6 +56,21 @@ export default defineConfig({
                 },
                 { text: 'Commands', link: 'crafting/commands' },
               ]
+            },
+            {
+              text: '💿 csms_log',
+              collapsed: false,
+              link: '/log/',
+              items: [
+                { text: 'Installation', link: 'log/installation',
+                  items: [
+                    { text: 'Ox_lib Compatibility', link: 'log/installation/ox-lib' },
+                  ], 
+                  collapsed: false
+                 },
+                { text: 'Configuration', link: 'log/config' },
+                { text: 'Usage', link: 'log/usage' },
+              ]
             }
             ]
           }
@@ -109,6 +124,21 @@ export default defineConfig({
                   collapsed: true
                 },
                 { text: '指令', link: '/zhHK/crafting/commands' },
+              ]
+            },
+            {
+              text: '💿 後台紀錄系統',
+              collapsed: false,
+              link: '/zhHK/log/',
+              items: [
+                { text: '安裝指南', link: '/zhHK/log/installation',
+                  items: [
+                    { text: 'Ox_lib 相容性', link: '/zhHK/log/installation/ox-lib' },
+                  ], 
+                  collapsed: false
+                 },
+                { text: '配置設定', link: '/zhHK/log/config' },
+                { text: '使用方式', link: '/zhHK/log/usage' },
               ]
             }
             ]
